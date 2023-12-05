@@ -1,0 +1,285 @@
+:root {
+  --clr-mrblue: rgb(144, 209, 209);
+  --clr-sblue: rgb(5, 60, 105);
+  --clr-lblack: rgb(47, 45, 45);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+.header {
+  background-color: var(--clr-lblack);
+  height: 80px;
+  width: 100%;
+  position: flex;
+}
+header ul {
+  position: absolute;
+  right: 2vw;
+  top: 0;
+  line-height: 40px;
+}
+header li {
+  display: inline;
+  padding: 0px;
+  margin: 3px;
+}
+header a {
+  color: var(--clr-mrblue);
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+header a:hover {
+  text-decoration: underline;
+}
+h1 {
+  color: var(--clr-lblack);
+  background-color: var(--clr-mrblue);
+  width: 20%;
+  height: 40px;
+  margin: 15px 0;
+  font-size: 25px;
+  text-align: center;
+}
+.hero-banner {
+  display: block;
+  margin: 0px 0;
+  height: 80px;
+  width: 100%;
+  background-image: url(/images/02-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--clr-mrblue);
+}
+main {
+  width: 100%;
+}
+h2 {
+  position: relative;
+  margin: 30px 10px;
+  float: right;
+  right: 1vw;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  background-color: var(--clr-mrblue);
+  color: var(--clr-lblack);
+}
+.page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.aboutme {
+  display: flex;
+  width: 100%;
+}
+h3,
+h4,
+h5 {
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 80px;
+  color: var(--clr-sblue);
+  border-color: var(--clr-sblue);
+  border-right: 2px solid;
+  float: left;
+  left: 0vw;
+  text-align: right;
+  width: 1rem;
+}
+.aboutme p {
+  font-size: 15px;
+  padding-left: 15px;
+  height: 100%;
+}
+.workex {
+  display: flex;
+  width: 100%;
+  height: 800px;
+}
+.container {
+  display: grid;
+  width: 100%;
+  column-gap: 10px;
+  row-gap: 10px;
+  height: 800px;
+  margin: 0px 20px;
+}
+#surf {
+  background-image: url(/images/02-portfolio-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border: 2px solid var(--clr-mrblue);
+  padding: 10px;
+}
+#led {
+  background-image: url(/images/02-portfolio-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border: 2px solid var(--clr-mrblue);
+  padding: 10px;
+}
+#cal {
+  background-image: url(/images/02-portfolio-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 2px solid var(--clr-mrblue);
+  padding: 10px;
+}
+#pastel {
+  background-image: url(/images/02-portfolio-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border: 2px solid var(--clr-mrblue);
+  padding: 10px;
+}
+#run {
+  background-image: url(/images/02-run-buddy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 2px solid var(--clr-mrblue);
+  padding: 10px;
+}
+.contactme {
+  position: flex;
+  right: 2vw;
+  top: 0;
+  line-height: 40px;
+  height: 100px;
+}
+.contactme ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contactme li {
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+.contactme a {
+  color: var(--clr-sblue);
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+h6 {
+  background-color: var(--clr-mrblue);
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 10%;
+  font-size: 20px;
+  align-self: auto;
+}
+.abc p {
+  background-color: var(--clr-mrblue);
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 10%;
+  font-size: 10px;
+  align-self: auto;
+}
+
+.abc {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    height: 30px;
+    margin: 0px 0px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  header {
+    height: 40px;
+    width: 100%;
+    position: flex;
+  }
+  header ul {
+    position: absolute;
+    right: 2vw;
+    top: 0;
+    line-height: 15px;
+  }
+  header li {
+    display: inline;
+    padding: 0px;
+    margin: 1px;
+  }
+  .hero-banner {
+    height: 40px;
+  }
+  h2 {
+    margin: 0px 10px;
+    right: 0vw;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+  }
+  h3,
+  h4,
+  h5 {
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 50px;
+    width: 0.5rem;
+  }
+  .aboutme p {
+    font-size: 13px;
+    padding-left: 10px;
+    height: 100%;
+  }
+  .workex {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    padding-left: 0px;
+  }
+  .container {
+    column-gap: 6px;
+    row-gap: 6px;
+    padding-left: 0px;
+  }
+  .contactme {
+    height: 100px;
+  }
+  .contactme a {
+    font-size: 13px;
+    border-bottom: 1px solid;
+  }
+  h6 {
+    font-size: 15px;
+  }
+}
