@@ -134,7 +134,7 @@ h5 {
   padding: 10px;
 }
 #led {
-  background-image: url(./images/02-portfolio-1.jpg);
+  background-image: url(/images/02-portfolio-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   grid-column-start: 1;
